@@ -38,3 +38,8 @@ kill the container
 ```bash
 docker rm -f kubernetes-questions
 ```
+
+proxy for the app access
+```bash
+kubectl proxy --port=8888 --address=0.0.0.0 --accept-hosts='^.*$' &
+```
