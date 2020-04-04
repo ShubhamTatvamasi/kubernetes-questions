@@ -1,11 +1,24 @@
 # kubernetes-questions
 
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/shubhamtatvamasi/kubernetes-questions)](https://hub.docker.com/r/shubhamtatvamasi/kubernetes-questions)
+[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/shubhamtatvamasi/kubernetes-questions?sort=semver)](https://hub.docker.com/r/shubhamtatvamasi/kubernetes-questions)
+[![Docker Image Size (tag)](https://img.shields.io/docker/image-size/shubhamtatvamasi/kubernetes-questions/latest)](https://hub.docker.com/r/shubhamtatvamasi/kubernetes-questions)
+[![Docker Pulls](https://img.shields.io/docker/pulls/shubhamtatvamasi/kubernetes-questions)](https://hub.docker.com/r/shubhamtatvamasi/kubernetes-questions)
+[![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/shubhamtatvamasi/kubernetes-questions/latest)](https://hub.docker.com/r/shubhamtatvamasi/kubernetes-questions)
+[![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/shubhamtatvamasi/kubernetes-questions)](https://hub.docker.com/r/shubhamtatvamasi/kubernetes-questions)
+
+app | location
+--- | ---
+CKA | /tmp/app_kubernetes-cka
+CKAD | /tmp/app_kubernetes-ckad
+EXAM | /tmp/app_kubernetes-cka-exam
+
 start questions container
 ```bash
 docker run -d --name kubernetes-questions shubhamtatvamasi/kubernetes-questions \
   /tmp/app_kubernetes-cka --questions_json a.json
 ```
-> if you want to get CKAD questions update the file name to `app_kubernetes-ckad`
+> replace the app for different set of questions
 
 list all questions
 ```bash
