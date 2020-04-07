@@ -15,3 +15,5 @@ RUN chmod 755 /tmp/app_kubernetes-cka
 RUN chmod 755 /tmp/app_kubernetes-ckad
 
 RUN chmod 755 /tmp/app_kubernetes-cka-exam
+
+VOLUME /tmp
