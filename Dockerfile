@@ -4,8 +4,6 @@ RUN apt-get update
 
 RUN apt-get install wget -y
 
-VOLUME /tmp
-
 RUN wget https://storage.googleapis.com/kodekloud/app_kubernetes-cka -O /tmp/app_kubernetes-cka
 
 RUN wget https://storage.googleapis.com/kodekloud/app_kubernetes-ckad -O /tmp/app_kubernetes-ckad
