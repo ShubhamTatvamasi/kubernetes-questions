@@ -48,6 +48,6 @@ kubectl proxy --port=8888 --address=0.0.0.0 --accept-hosts='^.*$' &
 
 copy file from container
 ```bash
-docker run --rm -v ${PWD}:/home shubhamtatvamasi/kubernetes-questions \
-  find /tmp -type f -exec cp {} /home \;
+docker run --rm -v ${PWD}:/host shubhamtatvamasi/kubernetes-questions \
+  find /tmp -type f -exec cp {} /host \;
 ```
